@@ -29,13 +29,8 @@ public class Basket implements Fruit
     @Override
     public boolean holdSeed()
     {
-        //System.out.println(Arrays.asList(basket).contains(true));
-        boolean temp = false;
-        for (Fruit fruit : basket)
-        {
-            temp = temp | fruit.holdSeed();
-        }
-        return temp;
+        return Arrays.stream(basket).anyMatch(Fruit -> Fruit.holdSeed());
+        
     }
 
 
