@@ -14,9 +14,9 @@ public class Command
         currentState = _state;
     }
     
-    public void processed()
+    public void process()
     {
-        currentState.processed(this);
+        currentState.process(this);
     }
 
 }
