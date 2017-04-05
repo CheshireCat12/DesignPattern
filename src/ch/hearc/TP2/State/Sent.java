@@ -6,6 +6,7 @@ public class Sent implements State
     public void process(Command wrapper)
     {
         wrapper.setState(new InWait());
+        
         System.out.println("SENT");
     }
 

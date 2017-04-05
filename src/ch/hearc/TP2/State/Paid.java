@@ -7,6 +7,7 @@ public class Paid implements State
     public void process(Command wrapper)
     {
         wrapper.setState(new Sent());
+        
         System.out.println("DONE");
     }
 
